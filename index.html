@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="#home">Portfolio</a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">RAKESH K</span>
+                    </h1>
+                    <p class="hero-subtitle">Building modern web applications with Python, Django, and modern frontend technologies</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/rakeshk110" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rakeshk110?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/rakeshk_rh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm an aspiring Python Full-Stack Developer passionate about creating efficient, scalable, and user-friendly web applications. 
+                        With a strong foundation in Python programming, I specialize in building robust backend systems using Flask and Django, 
+                        while also crafting engaging frontend experiences.
+                    </p>
+                    <p>
+                        My journey in web development has been driven by curiosity and a desire to solve real-world problems through code. 
+                        I enjoy working on projects that challenge me to learn new technologies and improve my skills continuously.
+                    </p>
+                    <p>
+                        When I'm not coding, I love contributing to open-source projects, reading tech blogs, and exploring the latest 
+                        trends in web development. I'm always eager to collaborate on exciting projects and learn from experienced developers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Python">
+                            <i class="devicon-python-plain"></i>
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="Django">
+                            <i class="devicon-django-plain"></i>
+                            <span class="skill-name">Django</span>
+                        </div>
+                        <div class="skill-item" data-skill="REST APIs">
+                            <i class="fas fa-code"></i>
+                            <span class="skill-name">REST APIs</span>
+                        </div>
+                        <div class="skill-item" data-skill="PostgreSQL">
+                            <i class="devicon-postgresql-plain"></i>
+                            <span class="skill-name">PostgreSQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                            <i class="devicon-mysql-plain"></i>
+                            <span class="skill-name">MySQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="SQLite">
+                            <i class="devicon-sqlite-plain"></i>
+                            <span class="skill-name">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="HTML5">
+                            <i class="devicon-html5-plain"></i>
+                            <span class="skill-name">HTML5</span>
+                        </div>
+                        <div class="skill-item" data-skill="CSS3">
+                            <i class="devicon-css3-plain"></i>
+                            <span class="skill-name">CSS3</span>
+                        </div>
+                        <div class="skill-item" data-skill="JavaScript">
+                            <i class="devicon-javascript-plain"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="Bootstrap">
+                            <i class="devicon-bootstrap-plain"></i>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="Git">
+                            <i class="devicon-git-plain"></i>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item" data-skill="GitHub">
+                            <i class="devicon-github-original"></i>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <i class="devicon-docker-plain"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item" data-skill="VS Code">
+                            <i class="devicon-vscode-plain"></i>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded dynamically from projects.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p>Download my resume to learn more about my experience, education, and qualifications.</p>
+                <a href="assets/resume.pdf" class="btn btn-primary" download id="resumeDownload">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:rakesh.kesavan30@example.com" class="contact-email">rakesh.kesavan30@example.com</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/rakeshk110" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rakeshk110?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/rakeshk_rh" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Aspiring Python Full-Stack Developer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

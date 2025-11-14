@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Zoom Feedback Validator App",
+    "description": "Developed a web application that analyses and validates user feedback from Zoom sessions using Natural Language Processing. The app classifies feedback as positive, negative, or neutral, and provides suggestions for improvement based on sentiment analysis",
+    "technologies": ["Python", "Hugging Face Transformers", "Gradio", "NLP", "Regex"],
+    "github": "https://github.com/rakeshk110/zoom_feedback_validate.git",
+    "live": "https://ecommerce-demo.com",
+    "image": "project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Habit Tracker App",
+    "description": "Built a web-based habit tracker that motivates users through gamification, including streaks, points, and achievement badges. Designed a responsive dashboard with real-time progress tracking and leaderboard features.",
+    "technologies": ["Python", "Django", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    "github": "https://github.com/rakeshk110/Habit-tracker.git",
+    "live": "https://habit-tracker-3hxc.onrender.com/",
+    "image": "project2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Smart Hostel App",
+    "description": "Built a web-based system for room allocation, tenant management, fee tracking, and complaints. Added role-based dashboards for admins and tenants to streamline daily operations.",
+    "technologies": ["Python", "Django", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    "github": "https://github.com/rakeshk110/smart-hostel-management-app.git",
+    "live": "https://smart-hostel.onrender.com",
+    "image": "project3.jpg"
+  }
+]
+
